@@ -31,6 +31,11 @@ namespace Top2000
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the Loaded event of the Window control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             StringBuilder sb = new StringBuilder();
@@ -47,11 +52,11 @@ namespace Top2000
             {
                 conn.Open();
 
-                cmd = new SqlCommand("SELECT * from song", conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-                DataTable table = new DataTable();
-                table.Load(reader);
-                dgData.ItemsSource = table.AsEnumerable();
+               // cmd = new SqlCommand("SELECT * from song", conn);
+               // SqlDataReader reader = cmd.ExecuteReader();
+               // DataTable table = new DataTable();
+               // table.Load(reader);
+               // dgData.ItemsSource = table.AsEnumerable();
             }
             catch (SqlException ex)
             {
@@ -64,9 +69,26 @@ namespace Top2000
             }
         }
 
+        /// <summary>
+        /// Handles the Closing event of the Window control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.ComponentModel.CancelEventArgs"/> instance containing the event data.</param>
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             conn.Close();
+        }
+
+        /// <summary>
+        /// Handles the Click event of the btnArtiest control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        private void btnArtiest_Click(object sender, RoutedEventArgs e)
+        {
+            Artiest a = new Artiest();
+            a.Show();
+            this.Close();
         }
     }
 }

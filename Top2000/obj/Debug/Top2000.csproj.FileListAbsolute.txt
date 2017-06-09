@@ -15,3 +15,17 @@ D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\Top2000.pdb
 E:\Stacks\School\Semester_4\PGM\Top2000\Top2000\bin\Debug\Top2000.exe.config
 E:\Stacks\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\Top2000.exe
 E:\Stacks\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\Top2000.pdb
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\bin\Debug\Data.dll
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\bin\Debug\Data.pdb
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\Artiest.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\artiestOverzicht.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\NieuwArtiest.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\nieuwSong.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\song.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\wijzigArtiest.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\Artiest.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\artiestOverzicht.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\NieuwArtiest.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\nieuwSong.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\song.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\wijzigArtiest.baml
