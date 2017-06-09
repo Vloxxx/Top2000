@@ -23,5 +23,17 @@ namespace Top2000
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Handles the Click event of the btnNieuwArtiest control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        private void btnNieuwArtiest_Click(object sender, RoutedEventArgs e)
+        {
+            NieuwArtiest na = new NieuwArtiest();
+            na.Show();
+            this.Close();
+        }
     }
 }

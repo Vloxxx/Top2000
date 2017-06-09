@@ -1,0 +1,20 @@
+﻿<Window x:Class="Top2000.wijzigArtiest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Top2000"
+        mc:Ignorable="d"
+        Title="wijzigArtiest" Height="300" Width="300">
+    <Grid>
+        <Image Name="imgFoto" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Name="btnWijzig" Content="Wijzig" HorizontalAlignment="Left" Margin="24,115,0,0" VerticalAlignment="Top" Width="75" Click="btnWijzig_Click"/>
+        <Label Name="lbNaam" HorizontalAlignment="Left" Margin="126,20,0,0" VerticalAlignment="Top" Height="25" Width="100"/>
+        <Label Content="URL:" HorizontalAlignment="Left" Margin="126,47,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="126,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="91" Margin="10,140,0,0" TextWrapping="Wrap" Text="Biografie" VerticalAlignment="Top" Width="272"/>
+        <Button Name="btnOpslaan" Content="Opslaan" HorizontalAlignment="Left" Margin="10,236,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnOpslaan_Click"/>
+        <Button Name="Annuleren" Content="Annuleren" HorizontalAlignment="Left" Margin="207,236,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.474,1.209" Height="23" Click="Annuleren_Click"/>
+
+    </Grid>
+</Window>
