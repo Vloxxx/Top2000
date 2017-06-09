@@ -88,7 +88,6 @@ namespace Top2000
         {
             Artiest a = new Artiest();
             a.Show();
-            this.Close();
         }
     }
 }
