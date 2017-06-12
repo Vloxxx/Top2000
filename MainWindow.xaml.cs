@@ -24,6 +24,7 @@ namespace Top2000
     {
         DataTable table = new DataTable();
         SqlConnection conn = new SqlConnection();
+        SqlDataReader reader;
         SqlCommand cmd;
 
         public MainWindow()
@@ -38,8 +39,9 @@ namespace Top2000
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            fillcbJaar();
+
             StringBuilder sb = new StringBuilder();
-            SqlDataReader reader;
             DataTable table = new DataTable();
             sb.Append(@"Server=(localdb)\mssqllocaldb;");
             sb.Append("Database=TOP2000;");
@@ -53,10 +55,8 @@ namespace Top2000
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SELECT * FROM lijst l join song s on s.songid=l.songid join artiest a on a.artiestid = s.artiestid", conn);
-                reader = cmd.ExecuteReader();
-                table.Load(reader);
-                dgData.ItemsSource = table.DefaultView;
+                fillDatatable();
+
             }
             catch (SqlException ex)
             {
@@ -68,8 +68,7 @@ namespace Top2000
                 MessageBox.Show(ex1.Message);
             }
             
-                //cbJaar.Items.Add()
-            
+                          
         }
 
         /// <summary>
@@ -92,6 +91,40 @@ namespace Top2000
             Artiest a = new Artiest();
             a.Show();
             this.Close();
+        }
+
+        /// <summary>
+        /// Fills the combobox jaar.
+        /// </summary>
+        public void fillcbJaar()
+        {
+            int eersteJaar = 1999;
+            while (eersteJaar < DateTime.Now.Year - 1)
+            {
+                cbJaar.Items.Add(eersteJaar);
+                eersteJaar = eersteJaar + 1;
+            }
+        }
+        /// <summary>
+        /// Fills the datatable dgData.
+        /// </summary>
+        public void fillDatatable()
+        {
+            cmd = new SqlCommand("SELECT top2000jaar, positie, titel, naam FROM lijst l join song s on s.songid=l.songid join artiest a on a.artiestid = s.artiestid where top2000jaar=" + cbJaar.SelectedItem.ToString() + "order by positie", conn);
+            reader = cmd.ExecuteReader();
+            table.Clear();
+            table.Load(reader);
+            dgData.ItemsSource = table.DefaultView;
+        }
+
+        /// <summary>
+        /// Handles the DropDownClosed event of the cbJaar control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        private void cbJaar_DropDownClosed(object sender, EventArgs e)
+        {
+            fillDatatable();
         }
     }
 }
