@@ -31,9 +31,16 @@ namespace Top2000
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the Loaded event of the Window control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             StringBuilder sb = new StringBuilder();
+            SqlDataReader reader;
+            DataTable table = new DataTable();
             sb.Append(@"Server=(localdb)\mssqllocaldb;");
             sb.Append("Database=TOP2000;");
             sb.Append("User Id=I5AO1;  Password=test;");
@@ -46,12 +53,10 @@ namespace Top2000
             try
             {
                 conn.Open();
-
-                cmd = new SqlCommand("SELECT * from song", conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-                DataTable table = new DataTable();
+                cmd = new SqlCommand("SELECT * FROM lijst l join song s on s.songid=l.songid join artiest a on a.artiestid = s.artiestid", conn);
+                reader = cmd.ExecuteReader();
                 table.Load(reader);
-                dgData.ItemsSource = table.AsEnumerable();
+                dgData.ItemsSource = table.DefaultView;
             }
             catch (SqlException ex)
             {
@@ -62,11 +67,31 @@ namespace Top2000
             {
                 MessageBox.Show(ex1.Message);
             }
+            
+                //cbJaar.Items.Add()
+            
         }
 
+        /// <summary>
+        /// Handles the Closing event of the Window control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.ComponentModel.CancelEventArgs"/> instance containing the event data.</param>
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             conn.Close();
+        }
+
+        /// <summary>
+        /// Handles the Click event of the btnArtiest control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        private void btnArtiest_Click(object sender, RoutedEventArgs e)
+        {
+            Artiest a = new Artiest();
+            a.Show();
+            this.Close();
         }
     }
 }

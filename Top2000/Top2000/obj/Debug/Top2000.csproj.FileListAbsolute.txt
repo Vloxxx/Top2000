@@ -18,6 +18,31 @@ E:\Stacks\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\Top2000.pdb
 D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\bin\Debug\Top2000.exe.config
 D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\obj\Debug\Top2000.exe
 D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\obj\Debug\Top2000.pdb
-D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\bin\Debug\Top2000.exe.config
-D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.exe
-D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.pdb
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\bin\Debug\Top2000.exe.config
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Top2000.exe
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Top2000.pdb
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\bin\Debug\Top2000.exe
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\bin\Debug\Top2000.pdb
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\bin\Debug\Data.dll
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\bin\Debug\Data.pdb
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Top2000.csprojResolveAssemblyReference.cache
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Artiest.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\artiestOverzicht.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\MainWindow.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\NieuwArtiest.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\nieuwSong.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\song.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\wijzigArtiest.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\App.g.cs
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Top2000_MarkupCompile.cache
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Top2000_MarkupCompile.lref
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Artiest.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\artiestOverzicht.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\MainWindow.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\NieuwArtiest.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\nieuwSong.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\song.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\wijzigArtiest.baml
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Top2000.g.resources
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Top2000.Properties.Resources.resources
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Top2000.csproj.GenerateResource.Cache
