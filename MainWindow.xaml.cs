@@ -39,22 +39,27 @@ namespace Top2000
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            //hier roep ik de methode fillcbJaar aan om de combobax te vullen.
             fillcbJaar();
-
+            //hier maak ik een string builder voor de connectionstring.
             StringBuilder sb = new StringBuilder();
-            DataTable table = new DataTable();
+            //hier geef ik de server aan.
             sb.Append(@"Server=(localdb)\mssqllocaldb;");
+            //hier geef ik de database aan.
             sb.Append("Database=TOP2000;");
+            //hier geef ik de usernamen en wachtwoord mee.
             sb.Append("User Id=I5AO1;  Password=test;");
-
+            //hier converteer ik de stringbuilder naar een gewoone string.
             string cs = sb.ToString();
-
+            //hier geef ik aan dat de connectionstring van conn cs is.
             conn.ConnectionString = cs;
 
 
             try
             {
+                //hier maak ik een connectie met de database.
                 conn.Open();
+                //hier roep ik de methode aan die de datagrid vult.
                 fillDatatable();
 
             }
@@ -98,22 +103,43 @@ namespace Top2000
         /// </summary>
         public void fillcbJaar()
         {
-            int eersteJaar = 1999;
-            while (eersteJaar < DateTime.Now.Year - 1)
+            try
             {
-                cbJaar.Items.Add(eersteJaar);
-                eersteJaar = eersteJaar + 1;
+                // de start waarde is 1999 van het eerste jaar van de top 2000
+                int jaar = 1999;
+                //zolang jaar kleiner dat de systeem jaar -1
+                while (jaar < DateTime.Now.Year - 1)
+                {
+                    //hier vul ik de combobox met de waarde van jaar
+                    cbJaar.Items.Add(jaar);
+                    //hier tel ik er een jaar bij op
+                    jaar = jaar + 1;
+                }
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
         /// <summary>
         /// Fills the datatable dgData.
         /// </summary>
         public void fillDatatable()
         {
-            cmd = new SqlCommand("SELECT top2000jaar, positie, titel, naam FROM lijst l join song s on s.songid=l.songid join artiest a on a.artiestid = s.artiestid where top2000jaar=" + cbJaar.SelectedItem.ToString() + "order by positie", conn);
-            reader = cmd.ExecuteReader();
+            //ik maak eerst me tabel  schoon
             table.Clear();
+            //hier roep ik de stored prosedure aan
+            cmd = new SqlCommand("dbo.getTop2000FromYear", conn);
+            //hier geef ik aan dat de sqlcommand een stored procedure is
+            cmd.CommandType = CommandType.StoredProcedure;
+            //hier geef ik een parameter mee met de waarde van de combobox jaar
+            cmd.Parameters.Add(new SqlParameter("@Year", cbJaar.SelectedItem.ToString()));
+            //hier voor ik de sql command uit en geef de waardes mee aan reader
+            reader = cmd.ExecuteReader();
+            //hier maak ik een tabel aan met de waardes uit de database
             table.Load(reader);
+            //hier vul ik de datagrid 
             dgData.ItemsSource = table.DefaultView;
         }
 
@@ -124,6 +150,7 @@ namespace Top2000
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void cbJaar_DropDownClosed(object sender, EventArgs e)
         {
+            //hier roep ik de fillDatatable methode aan
             fillDatatable();
         }
     }
