@@ -18,3 +18,6 @@ E:\Stacks\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\Top2000.pdb
 D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\bin\Debug\Top2000.exe.config
 D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\obj\Debug\Top2000.exe
 D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\obj\Debug\Top2000.pdb
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\bin\Debug\Top2000.exe.config
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.exe
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.pdb
