@@ -46,3 +46,31 @@ D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\wijzigA
 D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Top2000.g.resources
 D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Top2000.Properties.Resources.resources
 D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Top2000\obj\Debug\Top2000.csproj.GenerateResource.Cache
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\bin\Debug\Top2000.exe.config
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.exe
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.pdb
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.csprojResolveAssemblyReference.cache
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Artiest.g.cs
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\artiestOverzicht.g.cs
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\MainWindow.g.cs
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\NieuwArtiest.g.cs
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\nieuwSong.g.cs
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\song.g.cs
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\wijzigArtiest.g.cs
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\App.g.cs
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000_MarkupCompile.cache
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000_MarkupCompile.lref
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\bin\Debug\Top2000.exe
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\bin\Debug\Top2000.pdb
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\bin\Debug\Data.dll
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\bin\Debug\Data.pdb
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Artiest.baml
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\artiestOverzicht.baml
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\MainWindow.baml
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\NieuwArtiest.baml
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\nieuwSong.baml
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\song.baml
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\wijzigArtiest.baml
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.g.resources
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.Properties.Resources.resources
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.csproj.GenerateResource.Cache

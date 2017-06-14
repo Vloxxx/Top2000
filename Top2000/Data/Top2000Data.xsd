@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Top2000Data" targetNamespace="http://tempuri.org/Top2000Data.xsd" xmlns:mstns="http://tempuri.org/Top2000Data.xsd" xmlns="http://tempuri.org/Top2000Data.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TOP2000ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TOP2000ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Data.Properties.Settings.GlobalReference.Default.TOP2000ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Top2000DataTableAdapter" GeneratorDataComponentClassName="Top2000DataTableAdapter" Name="Top2000Data" UserDataComponentName="Top2000DataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TOP2000ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM Song s
+JOIN Artiest a ON s.artiestid = a.artiestid
+JOIN Lijst l ON s.songid = l.songid</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="songid" DataSetColumn="songid" />
+              <Mapping SourceColumn="artiestid" DataSetColumn="artiestid" />
+              <Mapping SourceColumn="titel" DataSetColumn="titel" />
+              <Mapping SourceColumn="jaar" DataSetColumn="jaar" />
+              <Mapping SourceColumn="intro" DataSetColumn="intro" />
+              <Mapping SourceColumn="songtekst" DataSetColumn="songtekst" />
+              <Mapping SourceColumn="artiestid1" DataSetColumn="artiestid1" />
+              <Mapping SourceColumn="naam" DataSetColumn="naam" />
+              <Mapping SourceColumn="biografie" DataSetColumn="biografie" />
+              <Mapping SourceColumn="foto" DataSetColumn="foto" />
+              <Mapping SourceColumn="url" DataSetColumn="url" />
+              <Mapping SourceColumn="songid1" DataSetColumn="songid1" />
+              <Mapping SourceColumn="top2000jaar" DataSetColumn="top2000jaar" />
+              <Mapping SourceColumn="positie" DataSetColumn="positie" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Top2000Data" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Top2000Data" msprop:Generator_UserDSName="Top2000Data">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Top2000Data" msprop:Generator_TableClassName="Top2000DataDataTable" msprop:Generator_TableVarName="tableTop2000Data" msprop:Generator_TablePropName="_Top2000Data" msprop:Generator_RowDeletingName="Top2000DataRowDeleting" msprop:Generator_RowChangingName="Top2000DataRowChanging" msprop:Generator_RowEvHandlerName="Top2000DataRowChangeEventHandler" msprop:Generator_RowDeletedName="Top2000DataRowDeleted" msprop:Generator_UserTableName="Top2000Data" msprop:Generator_RowChangedName="Top2000DataRowChanged" msprop:Generator_RowEvArgName="Top2000DataRowChangeEvent" msprop:Generator_RowClassName="Top2000DataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="songid" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnsongid" msprop:Generator_ColumnPropNameInRow="songid" msprop:Generator_ColumnPropNameInTable="songidColumn" msprop:Generator_UserColumnName="songid" type="xs:int" />
+              <xs:element name="artiestid" msprop:Generator_ColumnVarNameInTable="columnartiestid" msprop:Generator_ColumnPropNameInRow="artiestid" msprop:Generator_ColumnPropNameInTable="artiestidColumn" msprop:Generator_UserColumnName="artiestid" type="xs:int" />
+              <xs:element name="titel" msprop:Generator_ColumnVarNameInTable="columntitel" msprop:Generator_ColumnPropNameInRow="titel" msprop:Generator_ColumnPropNameInTable="titelColumn" msprop:Generator_UserColumnName="titel">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jaar" msprop:Generator_ColumnVarNameInTable="columnjaar" msprop:Generator_ColumnPropNameInRow="jaar" msprop:Generator_ColumnPropNameInTable="jaarColumn" msprop:Generator_UserColumnName="jaar" type="xs:int" />
+              <xs:element name="intro" msprop:Generator_ColumnVarNameInTable="columnintro" msprop:Generator_ColumnPropNameInRow="intro" msprop:Generator_ColumnPropNameInTable="introColumn" msprop:Generator_UserColumnName="intro" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="songtekst" msprop:Generator_ColumnVarNameInTable="columnsongtekst" msprop:Generator_ColumnPropNameInRow="songtekst" msprop:Generator_ColumnPropNameInTable="songtekstColumn" msprop:Generator_UserColumnName="songtekst" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="artiestid1" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnartiestid1" msprop:Generator_ColumnPropNameInRow="artiestid1" msprop:Generator_ColumnPropNameInTable="artiestid1Column" msprop:Generator_UserColumnName="artiestid1" type="xs:int" />
+              <xs:element name="naam" msprop:Generator_ColumnVarNameInTable="columnnaam" msprop:Generator_ColumnPropNameInRow="naam" msprop:Generator_ColumnPropNameInTable="naamColumn" msprop:Generator_UserColumnName="naam">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="biografie" msprop:Generator_ColumnVarNameInTable="columnbiografie" msprop:Generator_ColumnPropNameInRow="biografie" msprop:Generator_ColumnPropNameInTable="biografieColumn" msprop:Generator_UserColumnName="biografie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="foto" msprop:Generator_ColumnVarNameInTable="columnfoto" msprop:Generator_ColumnPropNameInRow="foto" msprop:Generator_ColumnPropNameInTable="fotoColumn" msprop:Generator_UserColumnName="foto" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="url" msprop:Generator_ColumnVarNameInTable="columnurl" msprop:Generator_ColumnPropNameInRow="url" msprop:Generator_ColumnPropNameInTable="urlColumn" msprop:Generator_UserColumnName="url" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="songid1" msprop:Generator_ColumnVarNameInTable="columnsongid1" msprop:Generator_ColumnPropNameInRow="songid1" msprop:Generator_ColumnPropNameInTable="songid1Column" msprop:Generator_UserColumnName="songid1" type="xs:int" />
+              <xs:element name="top2000jaar" msprop:Generator_ColumnVarNameInTable="columntop2000jaar" msprop:Generator_ColumnPropNameInRow="top2000jaar" msprop:Generator_ColumnPropNameInTable="top2000jaarColumn" msprop:Generator_UserColumnName="top2000jaar" type="xs:int" />
+              <xs:element name="positie" msprop:Generator_ColumnVarNameInTable="columnpositie" msprop:Generator_ColumnPropNameInRow="positie" msprop:Generator_ColumnPropNameInTable="positieColumn" msprop:Generator_UserColumnName="positie" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Top2000Data" />
+      <xs:field xpath="mstns:songid" />
+      <xs:field xpath="mstns:artiestid1" />
+      <xs:field xpath="mstns:songid1" />
+      <xs:field xpath="mstns:top2000jaar" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
