@@ -105,14 +105,14 @@ namespace Top2000
         {
             try
             {
-                // de start waarde is 1999 van het eerste jaar van de top 2000
+                // de start waarde is 1999 van het eerste jaar van de top 2000.
                 int jaar = 1999;
-                //zolang jaar kleiner dat de systeem jaar -1
+                //zolang jaar kleiner dat de systeem jaar -1.
                 while (jaar < DateTime.Now.Year - 1)
                 {
-                    //hier vul ik de combobox met de waarde van jaar
+                    //hier vul ik de combobox met de waarde van jaar.
                     cbJaar.Items.Add(jaar);
-                    //hier tel ik er een jaar bij op
+                    //hier tel ik er een jaar bij op.
                     jaar = jaar + 1;
                 }
             }
@@ -127,19 +127,19 @@ namespace Top2000
         /// </summary>
         public void fillDatatable()
         {
-            //ik maak eerst me tabel  schoon
+            //ik maak eerst me tabel  schoon.
             table.Clear();
-            //hier roep ik de stored prosedure aan
+            //hier roep ik de stored prosedure aan.
             cmd = new SqlCommand("dbo.getTop2000FromYear", conn);
-            //hier geef ik aan dat de sqlcommand een stored procedure is
+            //hier geef ik aan dat de sqlcommand een stored procedure is.
             cmd.CommandType = CommandType.StoredProcedure;
-            //hier geef ik een parameter mee met de waarde van de combobox jaar
+            //hier geef ik een parameter mee met de waarde van de combobox jaar.
             cmd.Parameters.Add(new SqlParameter("@Year", cbJaar.SelectedItem.ToString()));
-            //hier voor ik de sql command uit en geef de waardes mee aan reader
+            //hier voor ik de sql command uit en geef de waardes mee aan reader.
             reader = cmd.ExecuteReader();
-            //hier maak ik een tabel aan met de waardes uit de database
+            //hier maak ik een tabel aan met de waardes uit de database.
             table.Load(reader);
-            //hier vul ik de datagrid 
+            //hier vul ik de datagrid.
             dgData.ItemsSource = table.DefaultView;
         }
 
@@ -150,7 +150,7 @@ namespace Top2000
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void cbJaar_DropDownClosed(object sender, EventArgs e)
         {
-            //hier roep ik de fillDatatable methode aan
+            //hier roep ik de fillDatatable methode aan.
             fillDatatable();
         }
     }
