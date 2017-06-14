@@ -27,6 +27,9 @@ namespace Top2000
         SqlDataReader reader;
         SqlCommand cmd;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainWindow"/> class.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -94,6 +97,12 @@ namespace Top2000
             a.Show();
             this.Close();
         }
+
+        /// <summary>
+        /// Handles the DoubleClick event of the Row control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="MouseButtonEventArgs"/> instance containing the event data.</param>
         private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
         {
             DataGridRow row = sender as DataGridRow;
@@ -156,6 +165,16 @@ namespace Top2000
         {
             //hier roep ik de fillDatatable methode aan.
             fillDatatable();
+        }
+
+        /// <summary>
+        /// Handles the Click event of the btnNieuwTop2000 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        private void btnNieuwTop2000_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Comming soon!!!");
         }
     }
 }

@@ -19,20 +19,15 @@ namespace Top2000
     /// </summary>
     public partial class song : Window
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="song"/> class.
+        /// </summary>
         public song()
         {
             InitializeComponent();
         }
 
-        /// <summary>
-        /// Handles the Click event of the btnInfo control.
-        /// </summary>
-        /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
-        private void btnInfo_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
 
         /// <summary>
         /// Handles the Click event of the btnTerug control.
@@ -43,6 +38,18 @@ namespace Top2000
         {
             MainWindow main = new MainWindow();
             main.Show();
+            this.Close();
+        }
+
+        /// <summary>
+        /// Handles the Click event of the btnNewSong control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        private void btnNewSong_Click(object sender, RoutedEventArgs e)
+        {
+            nieuwSong ns = new nieuwSong();
+            ns.Show();
             this.Close();
         }
     }

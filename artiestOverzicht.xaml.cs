@@ -43,6 +43,12 @@ namespace Top2000
             this.Close();
         }
 
+
+        /// <summary>
+        /// Handles the Loaded event of the Window control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //hier maak ik een string builder voor de connectionstring.
@@ -76,6 +82,9 @@ namespace Top2000
                 MessageBox.Show(ex1.Message);
             }
         }
+        /// <summary>
+        /// Fills the datatable.
+        /// </summary>
         public void fillDatatable()
         {
             //ik maak eerst me tabel  schoon.
@@ -90,6 +99,11 @@ namespace Top2000
             dgData.ItemsSource = table.DefaultView;
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnTop2000 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void btnTop2000_Click(object sender, RoutedEventArgs e)
         {
             MainWindow main = new MainWindow();
@@ -97,6 +111,11 @@ namespace Top2000
             this.Close();
         }
 
+        /// <summary>
+        /// Handles the Closing event of the Window control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.ComponentModel.CancelEventArgs"/> instance containing the event data.</param>
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
 

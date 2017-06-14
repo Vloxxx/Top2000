@@ -12,8 +12,8 @@
         <Label Name="lbTitleDescription" HorizontalAlignment="Left" Margin="110,25,0,0" VerticalAlignment="Top" Height="85" Width="174"/>
         <Label Name="lbArtiest" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top"/>
         <Label Name="lbArtiestDescription" HorizontalAlignment="Left" Margin="10,138,0,0" VerticalAlignment="Top" Height="92" Width="274"/>
-        <Button Name="btnInfo" Content="Meer over artiest" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Width="100" Click="btnInfo_Click"/>
-        <Button Name="btnTerug" Content="Terug" HorizontalAlignment="Left" Margin="209,230,0,0" VerticalAlignment="Top" Width="75" Click="btnTerug_Click"/>
+        <Button Name="btnNewSong" Content="Nieuw liedje" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Width="100" Click="btnNewSong_Click" />
+        <Button Name="btnTerug" Content="Terug" HorizontalAlignment="Left" Margin="209,235,0,0" VerticalAlignment="Top" Width="75" Click="btnTerug_Click"/>
 
 
     </Grid>

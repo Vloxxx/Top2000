@@ -19,6 +19,9 @@ namespace Top2000
     /// </summary>
     public partial class Artiest : Window
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Artiest"/> class.
+        /// </summary>
         public Artiest()
         {
             InitializeComponent();
