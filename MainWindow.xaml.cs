@@ -66,14 +66,11 @@ namespace Top2000
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
-
             }
             catch (Exception ex1)
             {
                 MessageBox.Show(ex1.Message);
-            }
-            
-                          
+            }       
         }
 
         /// <summary>
@@ -93,8 +90,15 @@ namespace Top2000
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void btnArtiest_Click(object sender, RoutedEventArgs e)
         {
-            Artiest a = new Artiest();
+            artiestOverzicht a = new artiestOverzicht();
             a.Show();
+            this.Close();
+        }
+        private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            DataGridRow row = sender as DataGridRow;
+            song s = new song();
+            s.Show();
             this.Close();
         }
 

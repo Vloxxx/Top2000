@@ -41,7 +41,7 @@ namespace Top2000
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void btnOpslaan_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("opslaan gelukt");
         }
 
         /// <summary>
@@ -51,7 +51,13 @@ namespace Top2000
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void btnAnnuleren_Click(object sender, RoutedEventArgs e)
         {
+           this.Close();
+        }
 
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            artiestOverzicht ao = new artiestOverzicht();
+            ao.Show();
         }
     }
 }
