@@ -81,6 +81,7 @@ namespace Top2000
             {
                 MessageBox.Show(ex1.Message);
             }
+
         }
         /// <summary>
         /// Fills the datatable.
@@ -119,6 +120,24 @@ namespace Top2000
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
 
+        }
+
+        private void btnZoek_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+
+                    /// <summary>
+                    /// Handles the DoubleClick event of the Row control.
+                    /// </summary>
+                    /// <param name="sender">The source of the event.</param>
+                    /// <param name="e">The <see cref="MouseButtonEventArgs"/> instance containing the event data.</param>
+        private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            DataGridRow row = sender as DataGridRow;
+            Artiest a = new Artiest();
+            a.Show();
+            this.Close();
         }
     }
 }

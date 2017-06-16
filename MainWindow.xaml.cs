@@ -176,5 +176,10 @@ namespace Top2000
         {
             MessageBox.Show("Comming soon!!!");
         }
+
+        private void btnZoek_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

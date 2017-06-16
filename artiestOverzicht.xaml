@@ -10,8 +10,13 @@
         <Button Name="btnTop2000" Content="Top2000 lijst" HorizontalAlignment="Left" Margin="4.505,22,0,0" VerticalAlignment="Top" Width="75" Click="btnTop2000_Click" Grid.Column="1"/>
         <Button Name="btnNieuwArtiest" Content="Nieuwe Artiest toevoegen" HorizontalAlignment="Left" Margin="101.505,22,0,0" VerticalAlignment="Top" Click="btnNieuwArtiest_Click" Grid.Column="1"/>
         <TextBox Name="tbZoek" HorizontalAlignment="Left" Height="23" Margin="286.505,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <Button Name="btnZoek" Content="Zoek" HorizontalAlignment="Left" Margin="411.505,18,0,0" VerticalAlignment="Top" Width="75" Height="23" Grid.Column="1"/>
-        <DataGrid Name="dgData" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.756,12.043" Margin="10,67,0,0" Height="244" Width="498" IsReadOnly="True" Grid.ColumnSpan="2"/>
-
+        <Button Name="btnZoek" Content="Zoek" HorizontalAlignment="Left" Margin="411.505,18,0,0" VerticalAlignment="Top" Width="75" Height="23" Grid.Column="1" Click="btnZoek_Click"/>
+        <DataGrid Name="dgData" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.756,12.043" Margin="10,67,0,0" Height="244" Width="498" IsReadOnly="True" Grid.ColumnSpan="2">
+        <DataGrid.Resources>
+            <Style TargetType="DataGridRow">
+                <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+            </Style>
+        </DataGrid.Resources>
+        </DataGrid>
     </Grid>
 </Window>

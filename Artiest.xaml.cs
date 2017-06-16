@@ -50,12 +50,14 @@ namespace Top2000
         }
 
         /// <summary>
-        /// Handles the Click event of the btnTerug control.
+        /// Handles the Click event of the btnTersourceug control.
         /// </summary>
-        /// <param name="sender">The source of the event.</param>
+        /// <param name="sender">The  of the event.</param>
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void btnTerug_Click(object sender, RoutedEventArgs e)
         {
+            artiestOverzicht ao = new artiestOverzicht();
+            ao.Show();
             this.Close();
         }
     }
