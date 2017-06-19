@@ -74,3 +74,5 @@ D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\wijzi
 D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.g.resources
 D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.Properties.Resources.resources
 D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\Top2000.csproj.GenerateResource.Cache
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\songOverzicht.g.cs
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\songOverzicht.baml

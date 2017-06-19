@@ -30,6 +30,7 @@ namespace Top2000
         public MainWindow()
         {
             InitializeComponent();
+            this.cbJaar.SelectionChanged += new SelectionChangedEventHandler(OnMyComboBoxChanged);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -47,8 +48,6 @@ namespace Top2000
                 cbJaar.Items.Add(i);
             }
 
-            //cbJaar.Items.Add("2015");
-
             string cs = sb.ToString();
 
             conn.ConnectionString = cs;
@@ -57,7 +56,7 @@ namespace Top2000
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SELECT * from song s join lijst l on s.songid=l.songid join artiest a on a.artiestid=s.artiestid where Top2000Jaar=" + cbJaar.SelectedItem.ToString(), conn);
+                cmd = new SqlCommand("SELECT l.positie, s.titel, a.naam, s.jaar from song s join lijst l on s.songid=l.songid join artiest a on a.artiestid=s.artiestid where Top2000Jaar=" + cbJaar.SelectedItem.ToString() + "ORDER BY l.positie ASC", conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 DataTable table = new DataTable();
                 table.Load(reader);
@@ -72,6 +71,7 @@ namespace Top2000
             {
                 MessageBox.Show(ex1.Message);
             }
+            conn.Close();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -83,6 +83,46 @@ namespace Top2000
         {
             artiestOverzicht a = new artiestOverzicht();
             a.ShowDialog();
+        }
+
+        private void btnSong_Click(object sender, RoutedEventArgs e)
+        {
+            songOverzicht s = new songOverzicht();
+            s.ShowDialog();
+        }
+        private void OnMyComboBoxChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string text = (sender as ComboBox).SelectedItem as string;
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append(@"Server=(localdb)\mssqllocaldb;");
+            sb.Append("Database=TOP2000;");
+            sb.Append("User Id=I5AO1;  Password=test;");
+
+            string cs = sb.ToString();
+
+            conn.ConnectionString = cs;
+
+
+            try
+            {
+                conn.Open();
+                cmd = new SqlCommand("SELECT l.positie, s.titel, a.naam, s.jaar from song s join lijst l on s.songid=l.songid join artiest a on a.artiestid=s.artiestid where Top2000Jaar=" + cbJaar.SelectedItem.ToString() + "ORDER BY l.positie ASC", conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                DataTable table = new DataTable();
+                table.Load(reader);
+                dgData.ItemsSource = table.AsDataView();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            catch (Exception ex1)
+            {
+                MessageBox.Show(ex1.Message);
+            }
+            conn.Close();
         }
     }
 }

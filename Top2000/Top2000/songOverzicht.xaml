@@ -1,0 +1,17 @@
+﻿<Window x:Class="Top2000.songOverzicht"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Top2000"
+        mc:Ignorable="d"
+        Title="songOverzicht" Height="330.144" Width="529.665">
+    <Grid>
+        <DataGrid x:Name="dgData" HorizontalAlignment="Left" Margin="10,34,-214.4,0" VerticalAlignment="Top" RenderTransformOrigin="-6.728,0.226" Height="234" Width="498"/>
+        <TextBox x:Name="tbZoek" HorizontalAlignment="Left" Margin="10,10,-54.4,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="338"/>
+        <Button x:Name="btnZoek" Content="Zoek" HorizontalAlignment="Left" Margin="353,10,-214.4,0" VerticalAlignment="Top" Width="155" Click="btnZoek_Click"/>
+        <Button x:Name="btnTerug" Content="Terug" HorizontalAlignment="Left" Margin="10,273,0,-21.8" VerticalAlignment="Top" Width="75" Click="btnTerug_Click"/>
+        <Button x:Name="btnNieuweSong" Content="Nieuwe Song" HorizontalAlignment="Left" Margin="353,273,-214.4,-21.8" VerticalAlignment="Top" Width="155"/>
+
+    </Grid>
+</Window>
