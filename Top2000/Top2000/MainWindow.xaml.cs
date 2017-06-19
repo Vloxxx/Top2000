@@ -78,5 +78,11 @@ namespace Top2000
         {
             conn.Close();
         }
+
+        private void btnArtiest_Click(object sender, RoutedEventArgs e)
+        {
+            artiestOverzicht a = new artiestOverzicht();
+            a.ShowDialog();
+        }
     }
 }
