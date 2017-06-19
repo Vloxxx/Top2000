@@ -38,7 +38,16 @@ namespace Top2000
             sb.Append(@"Server=(localdb)\mssqllocaldb;");
             sb.Append("Database=TOP2000;");
             sb.Append("User Id=I5AO1;  Password=test;");
-            cbJaar.Items.Add("2015");
+
+            DateTime nu = DateTime.Now;
+            DateTime begin = new DateTime(1999, 1, 1);
+
+            for(int i = begin.Year; i <= (nu.Year - 2); i++)
+            {
+                cbJaar.Items.Add(i);
+            }
+
+            //cbJaar.Items.Add("2015");
 
             string cs = sb.ToString();
 
@@ -48,7 +57,7 @@ namespace Top2000
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SELECT * from song s join lijst l on s.songid=l.songid join artiest a on a.artiestid=s.artiestid where Top2000Jaar=" + 2015, conn);
+                cmd = new SqlCommand("SELECT * from song s join lijst l on s.songid=l.songid join artiest a on a.artiestid=s.artiestid where Top2000Jaar=" + cbJaar.SelectedItem.ToString(), conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 DataTable table = new DataTable();
                 table.Load(reader);
