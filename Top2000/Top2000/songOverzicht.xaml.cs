@@ -17,15 +17,15 @@ using System.Windows.Shapes;
 namespace Top2000
 {
     /// <summary>
-    /// Interaction logic for artiestOverzicht.xaml
+    /// Interaction logic for songOverzicht.xaml
     /// </summary>
-    public partial class artiestOverzicht : Window
+    public partial class songOverzicht : Window
     {
         DataTable table = new DataTable();
         SqlConnection conn = new SqlConnection();
         SqlCommand cmd;
 
-        public artiestOverzicht()
+        public songOverzicht()
         {
             InitializeComponent();
         }
@@ -44,7 +44,7 @@ namespace Top2000
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SELECT a.foto, a.artiestid, a.naam  FROM Artiest a where a.naam LIKE '%" + tbZoek.Text + "%'", conn);
+                cmd = new SqlCommand("SELECT s.titel, a.naam, s.jaar FROM Song s JOIN Artiest a ON s.artiestid = a.artiestid WHERE s.titel LIKE '%" + tbZoek.Text + "%'", conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 DataTable table = new DataTable();
                 table.Load(reader);

@@ -58,6 +58,9 @@
     <Compile Include="song.xaml.cs">
       <DependentUpon>song.xaml</DependentUpon>
     </Compile>
+    <Compile Include="songOverzicht.xaml.cs">
+      <DependentUpon>songOverzicht.xaml</DependentUpon>
+    </Compile>
     <Compile Include="wijzigArtiest.xaml.cs">
       <DependentUpon>wijzigArtiest.xaml</DependentUpon>
     </Compile>
@@ -96,6 +99,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="song.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="songOverzicht.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

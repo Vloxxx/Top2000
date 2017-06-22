@@ -87,7 +87,5 @@ namespace Data
             this.Foto = foto;
             this.Url = url;
         }
-
-
     }
 }
