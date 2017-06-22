@@ -135,6 +135,13 @@ namespace Top2000
         private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
         {
             DataGridRow row = sender as DataGridRow;
+            DataRowView oDataRowView = dgData.SelectedItem as DataRowView;
+            string sValue = "";
+
+            if (oDataRowView != null)
+            {
+                sValue = oDataRowView.Row["Naam"] as string;
+            }
             Artiest a = new Artiest();
             a.Show();
             this.Close();

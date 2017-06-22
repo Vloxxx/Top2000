@@ -73,7 +73,8 @@ namespace Top2000
             catch (Exception ex1)
             {
                 MessageBox.Show(ex1.Message);
-            }       
+            }
+
         }
 
         /// <summary>
@@ -106,9 +107,17 @@ namespace Top2000
         private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
         {
             DataGridRow row = sender as DataGridRow;
-            song s = new song();
-            s.Show();
-            this.Close();
+            DataRowView oDataRowView = dgData.SelectedItem as DataRowView;
+            string sValue = "";
+
+            if (oDataRowView != null)
+            {
+                sValue = oDataRowView.Row["Naam"] as string;
+            }
+            MessageBox.Show(sValue);
+            /* song s = new song();
+             s.Show();
+             this.Close();*/
         }
 
         /// <summary>
