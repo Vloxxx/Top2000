@@ -44,7 +44,7 @@ namespace Top2000
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SELECT a.foto, a.artiestid, a.naam  FROM Artiest a where a.naam LIKE '%" + tbZoek.Text + "%'", conn);
+                cmd = new SqlCommand("SELECT a.foto, a.naam  FROM Artiest a where a.naam LIKE '%" + tbZoek.Text + "%'", conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 DataTable table = new DataTable();
                 table.Load(reader);

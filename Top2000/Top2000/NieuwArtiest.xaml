@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="NieuwArtiest" Height="300" Width="300">
     <Grid>
-        
+        <Image x:Name="profileImage" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnWijzigImage" Content="Wijzig" HorizontalAlignment="Left" Margin="22,115,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lblNaam" Content="Naam:" HorizontalAlignment="Left" Margin="133,24,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtbNaam" HorizontalAlignment="Left" Height="23" Margin="133,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblURL" Content="URL:" HorizontalAlignment="Left" Margin="133,84,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtbURL" HorizontalAlignment="Left" Height="23" Margin="133,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblBiografie" Content="Biografie:" HorizontalAlignment="Left" Margin="22,148,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtbBiografie" HorizontalAlignment="Left" Height="86" Margin="22,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="231"/>
+
     </Grid>
 </Window>
