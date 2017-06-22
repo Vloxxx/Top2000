@@ -7,7 +7,13 @@
         mc:Ignorable="d"
         Title="artiestOverzicht" Height="348.086" Width="531.818">
     <Grid>
-        <DataGrid Name="dgData" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.728,0.226" Height="234" Width="498"/>
+        <DataGrid Name="dgData" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.756,12.043" Margin="10,34,0,0" Height="234" Width="498" IsReadOnly="True">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseDoubleClick" Handler="Row_DoubleClick"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
         <TextBox Name="tbZoek" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="338"/>
         <Button Name="btnZoek" Content="Zoek" HorizontalAlignment="Left" Margin="353,10,0,0" VerticalAlignment="Top" Width="155" Click="btnZoek_Click"/>
         <Button x:Name="btnTerug" Content="Terug" HorizontalAlignment="Left" Margin="10,273,0,0" VerticalAlignment="Top" Width="75" Click="btnTerug_Click"/>

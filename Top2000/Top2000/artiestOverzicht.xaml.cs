@@ -23,11 +23,24 @@ namespace Top2000
     {
         DataTable table = new DataTable();
         SqlConnection conn = new SqlConnection();
+        SqlDataReader reader;
         SqlCommand cmd;
 
         public artiestOverzicht()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// Handles the Click event of the btnNieuwArtiest control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
+        private void btnNieuwArtiest_Click(object sender, RoutedEventArgs e)
+        {
+            NieuwArtiest na = new NieuwArtiest();
+            na.Show();
+            this.Close();
         }
 
         private void btnZoek_Click(object sender, RoutedEventArgs e)
@@ -59,6 +72,27 @@ namespace Top2000
             {
                 MessageBox.Show(ex1.Message);
             }
+        }
+
+
+        /// <summary>
+        /// Handles the DoubleClick event of the Row control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="MouseButtonEventArgs"/> instance containing the event data.</param>
+        private void Row_DoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            DataGridRow row = sender as DataGridRow;
+            DataRowView oDataRowView = dgData.SelectedItem as DataRowView;
+            string sValue = "";
+
+            if (oDataRowView != null)
+            {
+                sValue = oDataRowView.Row["Naam"] as string;
+            }
+            Artiest a = new Artiest();
+            a.Show();
+            this.Close();
         }
 
         private void btnTerug_Click(object sender, RoutedEventArgs e)
