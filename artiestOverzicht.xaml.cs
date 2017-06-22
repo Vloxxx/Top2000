@@ -98,6 +98,8 @@ namespace Top2000
             table.Load(reader);
             //hier vul ik de datagrid.
             dgData.ItemsSource = table.DefaultView;
+
+
         }
 
         /// <summary>
