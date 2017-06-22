@@ -17,30 +17,19 @@ using System.Windows.Shapes;
 namespace Top2000
 {
     /// <summary>
-    /// Interaction logic for artiestOverzicht.xaml
+    /// Interaction logic for songOverzicht.xaml
     /// </summary>
-    public partial class artiestOverzicht : Window
+    public partial class songOverzicht : Window
     {
         DataTable table = new DataTable();
         SqlConnection conn = new SqlConnection();
         SqlCommand cmd;
 
-        public artiestOverzicht()
+        public songOverzicht()
         {
             InitializeComponent();
         }
 
-<<<<<<< HEAD
-        /// <summary>
-        /// Handles the Click event of the btnNieuwArtiest control.
-        /// </summary>
-        /// <param name="sender">The source of the event.</param>
-        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
-        private void btnNieuwArtiest_Click(object sender, RoutedEventArgs e)
-        {
-            NieuwArtiest na = new NieuwArtiest();
-            na.Show();
-=======
         private void btnZoek_Click(object sender, RoutedEventArgs e)
         {
             StringBuilder sb = new StringBuilder();
@@ -55,7 +44,7 @@ namespace Top2000
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SELECT a.foto, a.naam  FROM Artiest a where a.naam LIKE '%" + tbZoek.Text + "%'", conn);
+                cmd = new SqlCommand("SELECT s.titel, a.naam, s.jaar FROM Song s JOIN Artiest a ON s.artiestid = a.artiestid WHERE s.titel LIKE '%" + tbZoek.Text + "%'", conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 DataTable table = new DataTable();
                 table.Load(reader);
@@ -74,7 +63,6 @@ namespace Top2000
 
         private void btnTerug_Click(object sender, RoutedEventArgs e)
         {
->>>>>>> origin/master
             this.Close();
         }
     }

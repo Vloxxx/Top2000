@@ -5,14 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Top2000"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded" Closing="Window_Closing">
+        Title="MainWindow" Height="350" Width="598.684" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
+<<<<<<< HEAD
         <DataGrid Name="dgData" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.728,0.226" Height="202" Width="498"/>
         <Button Name="btnArtiest" Content="Artiesten" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" Width="75" Click="btnArtiest_Click"/>
         <Button Name="btnNieuwTop2000" Content="Nieuwe top2000" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="96"/>
         <ComboBox Name="cbJaar" HorizontalAlignment="Left" Margin="190,28,0,0" VerticalAlignment="Top" Width="120"/>
+=======
+        <DataGrid Name="dgData" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Height="202" Width="555"/>
+        <Button Name="btnArtiest" Content="Artiesten" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" Width="75" Click="btnArtiest_Click"/>
+        <Button Name="btnNieuwTop2000" Content="Nieuwe top2000" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="96"/>
+        <ComboBox Name="cbJaar" HorizontalAlignment="Left" Margin="190,28,0,0" VerticalAlignment="Top" Width="120"  SelectedIndex="0" />
+>>>>>>> origin/master
         <TextBox Name="tbZoek" HorizontalAlignment="Left" Margin="342,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="86"/>
         <Button Name="btnZoek" Content="Zoek" HorizontalAlignment="Left" Margin="433,28,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnSong" Content="Song" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top" Width="75" Click="btnSong_Click"/>
 
     </Grid>
 </Window>

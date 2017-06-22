@@ -1,5 +1,19 @@
+<<<<<<< HEAD
 D:\Stack\School\Semester_4\PGM\Top2000\Data\bin\Debug\Data.dll
 D:\Stack\School\Semester_4\PGM\Top2000\Data\bin\Debug\Data.pdb
 D:\Stack\School\Semester_4\PGM\Top2000\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 D:\Stack\School\Semester_4\PGM\Top2000\Data\obj\Debug\Data.dll
 D:\Stack\School\Semester_4\PGM\Top2000\Data\obj\Debug\Data.pdb
+=======
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Data\bin\Debug\Data.dll
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Data\bin\Debug\Data.pdb
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Data\obj\Debug\Data.dll
+D:\Stack\School\Semester_4\PGM\Top2000\Top2000\Top2000\Data\obj\Debug\Data.pdb
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Data\obj\Debug\Data.dll
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Data\obj\Debug\Data.pdb
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Data\bin\Debug\Data.dll.config
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Data\bin\Debug\Data.dll
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Data\bin\Debug\Data.pdb
+>>>>>>> origin/master

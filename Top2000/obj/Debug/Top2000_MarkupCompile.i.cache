@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 D:\Stack\School\Semester_4\PGM\Top2000\Top2000\obj\Debug\
+=======
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\obj\Debug\
+>>>>>>> origin/master
 Top2000
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 D:\Stack\School\Semester_4\PGM\Top2000\Top2000\App.xaml
 71015816621
 
 16-1688807845
 14-213668862
 Artiest.xaml;artiestOverzicht.xaml;MainWindow.xaml;NieuwArtiest.xaml;nieuwSong.xaml;song.xaml;wijzigArtiest.xaml;
+=======
+D:\SchoolJaar 2\PGM\Project Bankrekening\Top2000\Top2000\Top2000\App.xaml
+8-645897485
 
-False
+16651335000
+14-398681602
+Artiest.xaml;artiestOverzicht.xaml;MainWindow.xaml;NieuwArtiest.xaml;nieuwSong.xaml;song.xaml;songOverzicht.xaml;wijzigArtiest.xaml;
+>>>>>>> origin/master
+
+True
 
