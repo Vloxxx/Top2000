@@ -52,5 +52,14 @@ namespace Top2000
             ns.Show();
             this.Close();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            string titel = MainWindow.songName;
+            string arties = MainWindow.ArtiestName;
+            lbArtiest.Content = arties;
+            lbTitel.Content = titel;
+        }
     }
 }

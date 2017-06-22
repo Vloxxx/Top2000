@@ -20,12 +20,14 @@ namespace Top2000
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial  class MainWindow : Window
     {
         DataTable table = new DataTable();
         SqlConnection conn = new SqlConnection();
         SqlDataReader reader;
         SqlCommand cmd;
+        public static string songName;
+        public static string ArtiestName;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="MainWindow"/> class.
@@ -108,16 +110,14 @@ namespace Top2000
         {
             DataGridRow row = sender as DataGridRow;
             DataRowView oDataRowView = dgData.SelectedItem as DataRowView;
-            string sValue = "";
-
             if (oDataRowView != null)
             {
-                sValue = oDataRowView.Row["Naam"] as string;
+                songName = oDataRowView.Row["titel"] as string;
+                ArtiestName = oDataRowView.Row["naam"] as string;
             }
-            MessageBox.Show(sValue);
-            /* song s = new song();
+             song s = new song();
              s.Show();
-             this.Close();*/
+             this.Close();
         }
 
         /// <summary>
